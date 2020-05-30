@@ -137,11 +137,13 @@ a {
 /* Proyectos */
 .proyectos {
   margin: auto;
+  padding-left: 25px;
 }
 
 .proyectos img {
   filter: blur(5px);
   transition-duration: 0.2s;
+  padding-top: 25px;
 }
 
 .proyectos img:hover {
@@ -150,11 +152,15 @@ a {
 
 @media screen and (min-width: 40em) {
   .proyectos {
+    padding-left: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 1em;
     width: 90vw;
+  }
+  .proyectos img {
+    padding-top: 0px;
   }
 }
 
@@ -215,7 +221,7 @@ a {
     font-size: 64px;
   }
   .contacto p {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
@@ -298,8 +304,10 @@ button:last-child {
   max-width: 400px;
   margin: auto;
 }
+
 .texto {
   font-size: 13px;
+  font-family: var(--font-family-everett);
 }
 .titulo {
   font-size: 32px;
@@ -323,5 +331,8 @@ button:last-child {
   .titulo {
     padding-bottom: 60px;
     font-size: 70px;
+  }
+  .texto {
+    font-size: 15px;
   }
 }
